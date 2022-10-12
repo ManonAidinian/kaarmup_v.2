@@ -5,13 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby/Rails version : Ruby 3.0.3p157 / Rails 6.1.7
 
-* System dependencies
+* System dependencies : Devise
 
 * Configuration
 
-* Database creation
+* Database creation : Postesql
 
 * Database initialization
 
