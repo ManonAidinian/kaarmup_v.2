@@ -12,15 +12,19 @@
   </head>
 
   <body>
-  <%= render "shared/navbar"%>
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
+
+    <%= render "shared/navbar"%>
     <div class="container m-10">
-    <%= yield %>
+
+      <%= yield %>
+
+      <% if notice %>
+        <p class="alert alert-success text-gray-500 italic"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger text-gray-500 italic"><%= alert %></p>
+      <% end %>
+
     </div>
   </body>
 </html>
