@@ -6,7 +6,7 @@
 
 * Ruby/Rails version : Ruby 3.0.3p157 / Rails 6.1.7
 
-* System dependencies : Devise
+* System dependencies : Devise, Simpleform, Tailwind
 
 * Configuration :
 
