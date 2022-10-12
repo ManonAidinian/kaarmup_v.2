@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+🌱 Find charity needs to support, and grow the positive impact of your company.
 
-Things you may want to cover:
+----------------------------------------------------------------------------------------
 
-* Ruby version
+* Ruby/Rails version : Ruby 3.0.3p157 / Rails 6.1.7
 
-* System dependencies
+* System dependencies : Devise
 
-* Configuration
+* Configuration :
 
-* Database creation
+* Database creation : Postesql - Oct 2022
 
-* Database initialization
+* Database initialization :
 
-* How to run the test suite
+* How to run the test suite :
 
-* Services (job queues, cache servers, search engines, etc.)
+* Services (job queues, cache servers, search engines, etc.) :
 
-* Deployment instructions
+* Deployment instructions :
 
 * ...
