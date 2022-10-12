@@ -1,0 +1,19 @@
+<div class="flex justify-between items-center">
+
+  <div class="w-20 m-5">
+    <%= image_tag 'logo.png', alt: 'logo' %>
+  </div>
+
+  <ul class="flex gap-10 m-5">
+    <li class="md:text-blue-500">
+      <%= link_to "Sign up", new_user_registration_path %>
+    </li>
+    <li class="md:text-blue-500">
+      <%= link_to "Login", new_user_session_path %>
+    </li>
+    <li class="md:text-blue-500">
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    </li>
+  </ul>
+
+</div>
