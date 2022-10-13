@@ -1,6 +1,6 @@
 class CharitiesController < ApplicationController
   before_action :set_charity, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
     @charities = Charity.all
@@ -42,7 +42,7 @@ class CharitiesController < ApplicationController
   private
 
   def set_charity
-    @charity = Charity.find(param[:id])
+    @charity = Charity.find(params[:id])
   end
 
   def charity_params
