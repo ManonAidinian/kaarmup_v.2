@@ -3,6 +3,6 @@ class Charity < ApplicationRecord
 
   validates :name, presence: true
   validates :location, presence: { message: "we need to know where you are located please" }
-  validates :description, allow_nil: true
+  # validates :description, allow_nil: true
 
 end
