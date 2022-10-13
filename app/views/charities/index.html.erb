@@ -1,0 +1,5 @@
+<h1>Charities that need you :</h1>
+
+<% @charities.each do |charity| %>
+<%= charity.name.capitalize %>, 📍 <%= charity.location %>
+<% end %>

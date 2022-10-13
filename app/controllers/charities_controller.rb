@@ -1,5 +1,6 @@
 class CharitiesController < ApplicationController
   before_action :set_charity, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   def index
     @charities = Charity.all
@@ -14,6 +15,7 @@ class CharitiesController < ApplicationController
 
   def create
     @charity = Charity.new(charity_params)
+    @charity.user = current_user
     if @charity.save
       redirect_to charities_path, notice: "charity was successfully created."
     else
