@@ -1,0 +1,18 @@
+<div class="md:text-blue-500">
+<%= link_to "⬅️ Back to the home page", root_path %>
+</div>
+<br>
+
+<h1>Charities that need you :</h1>
+
+<% @charities.each do |charity| %>
+<%= charity.name.capitalize %>, 📍 <%= charity.location %>
+<%= link_to "Edit", edit_charity_path(charity), class:"md:text-blue-500" %>
+<%= link_to "Delete", charity_path(charity), method: :delete, class:"md:text-blue-500"%>
+<br>
+<% end %>
+
+<br>
+<div class="md:text-blue-500">
+  <%= link_to "Register your charity", new_charity_path %>
+</div>

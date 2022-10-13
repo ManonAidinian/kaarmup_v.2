@@ -1,0 +1,13 @@
+<div class="md:text-blue-500">
+<%= link_to "⬅️ Back to charities list", charities_path %>
+</div>
+<br>
+
+<h1>Update your charity informations :</h1>
+
+<%= simple_form_for @charity do |f| %>
+  <%= f.input :name %>
+  <%= f.input :location %>
+  <%= f.input :description %>
+  <%= f.button :submit, class:"md:text-blue-500" %>
+<% end %>
